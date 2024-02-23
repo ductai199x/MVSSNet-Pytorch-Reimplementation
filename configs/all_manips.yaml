@@ -11,9 +11,9 @@ training_args: {
   decay_rate: 0.80,
   decay_step: 2,
   manip_types: {
-    local-splicing: 800,
-    local-editing: 800,
-    # deepfake: 600,
-    # inpainting: 600,
+    local-splicing: 600,
+    local-editing: 600,
+    deepfake: 600,
+    inpainting: 600,
   }
 }

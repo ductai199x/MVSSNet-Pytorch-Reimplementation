@@ -182,8 +182,8 @@ def main():
     )
     parser.add_argument(
         "--gpus",
-        type=int,
-        help="number of gpus to use (-1 for all available gpus)",
+        type=lambda x: [int(i) for i in x.split(",")],
+        help="specify which GPUs to use (comma-separated list) or leave it alone to use all available GPUs",
         default=-1,
     )
     parser.add_argument(
