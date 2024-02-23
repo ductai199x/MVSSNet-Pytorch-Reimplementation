@@ -1,0 +1,19 @@
+---
+model_args: {
+  alpha: 0.16,
+  beta: 0.04,
+}
+training_args: {
+  lr: 1.0e-4,
+  max_epochs: 10,
+  batch_size: 16,
+  num_workers: 10,
+  decay_rate: 0.80,
+  decay_step: 2,
+  manip_types: {
+    local-splicing: 600,
+    local-editing: 600,
+    deepfake: 600,
+    inpainting: 600,
+  }
+}
